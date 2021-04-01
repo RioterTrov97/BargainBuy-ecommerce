@@ -1,0 +1,20 @@
+.homeScreen {
+	width: 100vw;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	&__main {
+		max-width: 1400px;
+	}
+
+	&__productList {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		flex-wrap: wrap;
+	}
+}
