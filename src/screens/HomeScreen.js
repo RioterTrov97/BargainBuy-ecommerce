@@ -19,14 +19,17 @@ const HomeScreen = () => {
 	return (
 		<div className="homeScreen">
 			<div className="homeScreen__main">
-				<h1>This is homescreen.</h1>
+				<h2 className="homeScreen__listTitle">Latest Products</h2>
 				<div className="homeScreen__productList">
 					{products.map((product) => (
 						<ProductCard
 							key={product._id}
+							id={product._id}
 							name={product.name}
 							image={product.image}
 							price={product.price}
+							rating={product.rating}
+							reviews={product.numReviews}
 						/>
 					))}
 				</div>

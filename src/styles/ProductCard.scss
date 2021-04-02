@@ -1,19 +1,19 @@
-$textlightgray: rgb(65, 65, 65);
-$textlightestgray: gray;
+$textdarkgray: rgb(65, 65, 65);
 $cardWidth: 350px;
 $imgHeight: 250px;
-$nameFontSize: 1.1em;
-$priceFontSize: 1em;
+$nameFontSize: 1em;
+$priceFontSize: 1.2em;
+$color: rgb(255, 255, 0);
 
 .productCard {
 	display: flex;
 	flex-direction: column;
 	max-width: $cardWidth;
-	box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-		rgba(17, 17, 26, 0.05) 0px 8px 32px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 	margin: 1em;
 	border-radius: 0.5em;
 	overflow: hidden;
+	cursor: pointer;
 
 	&__img {
 		object-fit: cover;
@@ -23,16 +23,21 @@ $priceFontSize: 1em;
 
 	&__name {
 		font-weight: 500;
-		color: $textlightgray;
+		color: $textdarkgray;
 		font-size: $nameFontSize;
 		padding-left: 10px;
 	}
 
+	&__rating {
+		margin-top: -10px;
+		padding-left: 10px;
+	}
+
 	&__price {
-		font-weight: 400;
-		color: $textlightestgray;
+		font-weight: 700;
+		color: $textdarkgray;
 		font-size: $priceFontSize;
 		padding-left: 10px;
-		margin-top: -10px;
+		margin-top: 5px;
 	}
 }
