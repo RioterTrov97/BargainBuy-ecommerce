@@ -1,0 +1,69 @@
+.orderListScreen {
+	width: 100%;
+	max-width: 100vw;
+	min-height: calc(100vh - 530px);
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+
+	&__title {
+		color: rgb(48, 48, 48);
+	}
+
+	&__main {
+		max-width: 1400px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__table {
+		border-collapse: collapse;
+	}
+
+	&__table > thead > tr > th,
+	&__table > tbody > tr > td {
+		padding: 10px 25px;
+		text-align: center;
+	}
+	&__table > thead > tr,
+	&__table > tbody > tr {
+		padding: 10px 15px;
+	}
+
+	&__table > thead {
+		background: rgb(0, 112, 177);
+		color: white;
+	}
+
+	&__table > tbody > tr:nth-child(even) {
+		background-color: #f2f2f2;
+	}
+
+	&__tableId {
+		cursor: pointer;
+	}
+
+	&__tableId:hover {
+		color: rgb(0, 112, 177);
+	}
+
+	&__tableOrderLink {
+		cursor: pointer;
+		color: rgb(0, 113, 219);
+		font-weight: 600;
+		background: none;
+		background: linear-gradient(
+				to left,
+				transparent 50%,
+				rgb(153, 0, 255) 50%
+			)
+			right;
+		background-size: 200%;
+		transition: 350ms ease-out;
+	}
+
+	&__tableOrderLink:hover {
+		background-position: left;
+		color: white;
+	}
+}

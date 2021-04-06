@@ -1,0 +1,30 @@
+$color: rgb(0, 156, 8);
+$secondaryColor: rgb(0, 187, 16);
+$colors: rgb(190, 255, 206);
+.message {
+	&__open {
+		display: flex;
+		width: 430px;
+		max-width: 500px;
+		border-radius: 10px;
+		margin-bottom: 20px;
+	}
+
+	&__open > i {
+		margin: 10px 10px 0 auto;
+		height: 20px;
+		cursor: pointer;
+	}
+
+	&__open > i:hover {
+		color: rgb(24, 24, 24);
+	}
+
+	&__hide {
+		display: none;
+	}
+
+	&__message {
+		padding-left: 20px;
+	}
+}

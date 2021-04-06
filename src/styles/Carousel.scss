@@ -1,0 +1,56 @@
+.carouselComp {
+	overflow: hidden;
+	width: 500px;
+	border-radius: 20px;
+
+	&__item {
+		width: 500px;
+		position: relative;
+
+		&:hover .carouselComp__button {
+			bottom: 60px;
+		}
+	}
+
+	&__nameButton {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: rgba(235, 235, 235, 0.705);
+		height: 60px;
+
+		> p {
+			bottom: 50px;
+			padding: 5px 10px 25px 10px;
+			border-radius: 10px;
+			color: rgb(77, 77, 77);
+		}
+
+		> button {
+			cursor: pointer;
+			position: absolute;
+			bottom: -100px;
+			font-size: 1em;
+			font-weight: 600;
+			min-width: 200px;
+			border: none;
+			outline: none;
+			background: none;
+			border: 1px solid rgb(0, 119, 255);
+			color: rgb(0, 119, 255);
+			border-radius: 20px;
+			height: 40px;
+			padding: 10px 20px;
+			margin: 10px 20px 10px auto;
+			transition: background 300ms bottom 350ms;
+		}
+		> button:hover {
+			color: white;
+			background: rgb(153, 0, 255);
+		}
+	}
+}
+
+.carousel {
+	border-radius: 20px;
+}

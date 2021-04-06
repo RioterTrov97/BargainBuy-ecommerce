@@ -1,0 +1,57 @@
+$footerColor: #f6f6f8;
+$DarkGray: rgb(65, 65, 65);
+$LightGray: rgb(124, 124, 124);
+$DarkBlue: rgb(34, 136, 252);
+
+.footer {
+	width: 100%;
+	max-width: 100vw;
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: $footerColor;
+
+	&__main {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 1400px;
+		max-width: 1400px;
+		padding: 20px;
+	}
+
+	&__col {
+		max-width: 250px;
+		margin: 20px 70px;
+	}
+
+	&__colTitle {
+		font-size: 1em;
+		font-weight: 500;
+		color: $DarkGray;
+		margin-bottom: 30px;
+	}
+
+	&__col1Phone {
+		font-size: 1.1em;
+		font-weight: 600;
+		color: $DarkGray;
+		cursor: pointer;
+	}
+
+	&__col1Phone:hover {
+		color: $DarkBlue;
+	}
+
+	&__colNormal {
+		font-size: 0.9em;
+		color: $LightGray;
+		padding: 5px 0;
+		cursor: pointer;
+	}
+
+	&__colNormal:hover {
+		color: $DarkBlue;
+	}
+}

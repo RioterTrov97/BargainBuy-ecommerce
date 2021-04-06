@@ -1,8 +1,9 @@
-$textlightgray: rgb(65, 65, 65);
+$textdarkgray: rgb(56, 56, 56);
 
 .homeScreen {
 	width: 100%;
 	max-width: 100vw;
+	min-height: calc(100vh - 510px);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -17,7 +18,9 @@ $textlightgray: rgb(65, 65, 65);
 	}
 
 	&__listTitle {
-		color: $textlightgray;
+		color: $textdarkgray;
+		font-size: 1.5em;
+		font-weight: 500;
 	}
 
 	&__productList {

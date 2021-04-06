@@ -1,0 +1,32 @@
+.pagination {
+	display: flex;
+	margin-top: 50px;
+
+	&__page {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 0 0 10px;
+		height: 40px;
+		width: 40px;
+		border-radius: 50%;
+		cursor: pointer;
+		font-weight: 500;
+		background: none;
+		transition: background 300ms;
+	}
+
+	&__page:hover {
+		background: rgb(179, 205, 253);
+	}
+
+	&__activePage {
+		color: white;
+		background: rgb(0, 86, 214);
+	}
+
+	&__activePage:hover {
+		color: white;
+		background: rgb(0, 86, 214);
+	}
+}
