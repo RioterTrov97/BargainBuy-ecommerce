@@ -6,18 +6,25 @@
 	&__item {
 		width: 500px;
 		position: relative;
-
-		&:hover .carouselComp__button {
-			bottom: 60px;
-		}
 	}
 
-	&__nameButton {
+	&__itemImage {
+		cursor: pointer !important;
+		transform: scale(1) !important;
+		transition: transform 350ms ease-in !important;
+	}
+
+	&__itemImage:hover {
+		transform: scale(1.1) !important;
+	}
+
+	&__bottom {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		background-color: rgba(235, 235, 235, 0.705);
-		height: 60px;
+		height: 70px;
+		margin-bottom: 5px;
 
 		> p {
 			bottom: 50px;
@@ -25,32 +32,50 @@
 			border-radius: 10px;
 			color: rgb(77, 77, 77);
 		}
-
-		> button {
-			cursor: pointer;
-			position: absolute;
-			bottom: -100px;
-			font-size: 1em;
-			font-weight: 600;
-			min-width: 200px;
-			border: none;
-			outline: none;
-			background: none;
-			border: 1px solid rgb(0, 119, 255);
-			color: rgb(0, 119, 255);
-			border-radius: 20px;
-			height: 40px;
-			padding: 10px 20px;
-			margin: 10px 20px 10px auto;
-			transition: background 300ms bottom 350ms;
-		}
-		> button:hover {
-			color: white;
-			background: rgb(153, 0, 255);
-		}
 	}
 }
 
 .carousel {
 	border-radius: 20px;
+}
+
+.dot {
+	background: rgb(133, 133, 133) !important;
+	outline: none !important;
+	width: 10px !important;
+	height: 10px !important;
+}
+
+.thumbs.animated {
+	margin-left: 50px !important;
+}
+
+.carousel .thumb.selected,
+.carousel .thumb:hover {
+	border: 2px solid rgb(172, 172, 172) !important;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.carousel .control-prev.control-arrow:before {
+	border-right: 8px solid rgb(41, 41, 41) !important;
+}
+
+.carousel .control-next.control-arrow:before {
+	border-left: 8px solid rgb(41, 41, 41) !important;
+}
+
+.carousel .control-arrow,
+.carousel.carousel-slider .control-arrow {
+	opacity: 0.8 !important;
+}
+
+.slider-wrapper:hover {
+	cursor: pointer !important;
+}
+
+.carousel .carousel-status {
+	color: gray !important;
+	font-size: 12px !important;
+	text-shadow: none !important;
 }
